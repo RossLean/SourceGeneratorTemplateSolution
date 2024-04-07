@@ -1,5 +1,6 @@
 using Microsoft.CodeAnalysis;
 using RoseLynn;
+using SourceGeneratorTemplate.Core;
 using System.Collections.Immutable;
 
 namespace SourceGeneratorTemplate.SourceGenerators.Tests;

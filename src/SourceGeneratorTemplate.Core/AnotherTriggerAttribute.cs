@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SourceGeneratorTemplate;
+namespace SourceGeneratorTemplate.Core;
 
 [AttributeUsage(AttributeTargets.Class)]
 public sealed class AnotherTriggerAttribute : Attribute;
