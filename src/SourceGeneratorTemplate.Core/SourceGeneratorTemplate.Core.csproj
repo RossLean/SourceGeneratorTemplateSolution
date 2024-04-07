@@ -5,4 +5,24 @@
     <LangVersion>12.0</LangVersion>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <IsPackable>true</IsPackable>
+    <PackageId>Template.MySourceGenerator.Core</PackageId>
+    <Version>1.0.0</Version>
+    <Copyright>Copyright (c) 2024</Copyright>
+    <PackageReleaseNotes>
+      Some notes about the package
+    </PackageReleaseNotes>
+
+    <DevelopmentDependency>true</DevelopmentDependency>
+    <Authors>Set the author here</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/...</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/...</RepositoryUrl>
+    <Description>Core components for Roslyn-powered source generator that does my thing</Description>
+    <PackageOutputPath>../../artifacts/Core/</PackageOutputPath>
+    <RepositoryType>git</RepositoryType>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+  </PropertyGroup>
+
 </Project>
