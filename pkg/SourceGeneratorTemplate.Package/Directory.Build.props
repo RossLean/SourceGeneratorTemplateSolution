@@ -1,0 +1,35 @@
+<Project>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <IsPackable>true</IsPackable>
+    <PackageId>Template.MySourceGenerator</PackageId>
+    <Version>1.0.0</Version>
+    <Copyright>Copyright (c) 2024</Copyright>
+    <PackageReleaseNotes>
+      Some notes about the package
+    </PackageReleaseNotes>
+
+    <!-- Special properties for analyzer packages. -->
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <NoWarn>$(NoWarn);NU5128;NU5127</NoWarn>
+
+    <DevelopmentDependency>true</DevelopmentDependency>
+    <Authors>Set the author here</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/...</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/...</RepositoryUrl>
+    <Description>Roslyn-powered source generator that does my thing</Description>
+    <PackageOutputPath>../../artifacts/</PackageOutputPath>
+    <RepositoryType>git</RepositoryType>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+  </PropertyGroup>
+
+  <Target Name="SetNuSpecProperties" BeforeTargets="GenerateNuspec">
+    <PropertyGroup>
+      <NuspecProperties>$(NuspecProperties);Version=$(Version);BaseOutputPath=$(OutputPath);PackageReleaseNotes=$(PackageReleaseNotes);</NuspecProperties>
+    </PropertyGroup>
+  </Target>
+
+</Project>

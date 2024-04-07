@@ -1,0 +1,12 @@
+<Project>
+
+  <ItemGroup>
+    <None Include="../../tools/*.*" Visible="false" Pack="true" PackagePath="tools" />
+    <None
+          Include="../../src/SourceGeneratorTemplate.SourceGenerators/bin/$(Configuration)/$(TargetFramework)/*.dll"
+          Visible="false"
+          Pack="true"
+          PackagePath="analyzers/dotnet/cs" />
+  </ItemGroup>
+
+</Project>

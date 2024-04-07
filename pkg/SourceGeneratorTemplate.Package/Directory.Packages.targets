@@ -1,0 +1,13 @@
+<Project>
+
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>false</ManagePackageVersionsCentrally>
+    <CentralPackageTransitivePinningEnabled>false</CentralPackageTransitivePinningEnabled>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../../src/SourceGeneratorTemplate.Core/SourceGeneratorTemplate.Core.csproj" />
+    <ProjectReference Include="../../src/SourceGeneratorTemplate.SourceGenerators/SourceGeneratorTemplate.SourceGenerators.csproj" />
+  </ItemGroup>
+
+</Project>
